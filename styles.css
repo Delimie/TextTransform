@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+}
+
+body{
+  font-size: 16px;
+}
+
+.ani {
+  display: flex;
+}
+
+.box {
+  border: 2px red solid;
+  overflow: hidden;
+  height: 20px;
+  width: 60px ;
+}
+
+li{
+  list-style: none;
+  padding-left: 5px;
+}
+
+.box:hover ul{
+  animation: ani1 ease-in-out 4s infinite;
+}
+
+@keyframes ani1 {
+   0% {transform:translateY(0px);}
+   25% {transform:translateY(-20px);}
+   50% {transform:translateY(-38px);}
+   75% {transform:translateY(-58px);}
+   100% {transform:translateY(0px);}
+ 
+}
